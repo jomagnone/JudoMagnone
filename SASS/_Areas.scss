@@ -1,0 +1,58 @@
+// variables
+$color_footer_fonde_de: #52729f50;
+$color_footer_fondo_hasta:#52729F;
+$color_fondo: #dfe4eb;
+$color_texto: #202325;
+$color_text_footer:  #141414;
+
+
+
+* {margin: 0px;padding: 0px;}
+
+a   {
+    color: $color_texto;
+    text-decoration-line: none;
+}
+
+html {
+    font-family: 'Lato';
+    background-color: $color_fondo; 
+    color: $color_texto;
+}
+header{
+    width: 100%;
+}
+
+
+
+footer {
+    background-image: linear-gradient(to bottom, $color_footer_fonde_de,$color_footer_fondo_hasta ) ;
+    color: $color_text_footer;
+    grid-area: footer;
+
+}
+
+footer .footer_iconos {
+    font-size: 50px;
+    display: inline-block;
+    margin: 10px;
+}
+
+img {
+    align-items: center;
+    width: 85%;
+    height: auto;
+    margin: 2%;
+    border-radius: 2%;
+    
+}
+
+.img:hover {
+    border-radius: 2%;
+    margin: 2%;
+
+}
+
+h1 {
+    font-size: 18px;
+}

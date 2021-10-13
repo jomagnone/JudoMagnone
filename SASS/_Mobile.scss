@@ -1,0 +1,44 @@
+@media only screen and (max-width: 600px) {
+    
+    body {
+        background-color: whitesmoke;
+    }
+    .text{
+        font-size: 13px;
+    }
+    img {
+       height: 60px;
+    }
+    #imgPrincipal {
+        height: 300px;
+    }
+    .ocultoMobile {
+        display: none;
+    }
+    .resaltado{
+        margin-top: 20px;
+    }
+    .p1 {
+        left: 0%;
+    }
+    .p2 { 
+        display: none !important;
+    }
+    .p3 {
+        left: 33.3% !important;
+    }
+    .p4 {
+        left: 66.6% !important;
+    }
+    .p5 {
+        display: none !important;
+    }
+    .menuPrincipal {
+        width: 33.3% !important;
+    }.resaltado {
+        font-size: 15px;
+    
+    }
+  
+    
+}

@@ -1,0 +1,97 @@
+//variables
+
+$color_fondo_grilla:white;
+
+header{
+    grid-area: header;
+}
+.contenido {
+    grid-area: contenido;
+}
+nav {
+    grid-area:nav;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr 55%;
+    grid-template-areas:
+     "gridTexto gridTexto gridTexto"
+     "gridTexto1 gridTexto2 gridTexto3"
+     "gridImgChica1 gridImgChica2 gridImgChica3";
+    column-gap: 10px;
+    row-gap: 15px;
+    align-items: center;
+    justify-items: center;
+    justify-content: stretch;
+
+}
+
+#gridImgGrande {
+    grid-area: gridImgGrande;
+    margin: 0%;
+}
+#gridTexto {
+    grid-area: gridTexto;
+    overflow: hidden;
+    align-self: flex-start;
+}
+#gridTexto1 {
+    grid-area: gridTexto1;
+    overflow: hidden;
+    align-self: top;
+}
+#gridTexto2 {
+    grid-area: gridTexto2;
+    overflow: hidden;
+    align-self: top;
+}
+#gridTexto3 {
+    grid-area: gridTexto3;
+    overflow: hidden;
+    align-self: top;
+}
+#gridImgChica1 {
+    grid-area: gridImgChica1;
+    width: 90%;
+    height: 90%;
+    background-color:$color_fondo_grilla;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+    text-align:  center;
+    vertical-align: middle;
+    
+
+}
+
+
+#gridImgChica2 {
+    grid-area: gridImgChica2;
+    width: 90%;
+    height: 90%;
+    background-color: $color_fondo_grilla;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+    text-align:  center;
+    vertical-align: middle;
+}
+
+
+#gridImgChica3 {
+    grid-area: gridImgChica3;
+    width: 90%;
+    height: 90%;
+    background-color: $color_fondo_grilla;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+    text-align:  center;
+    vertical-align: middle;
+    
+}

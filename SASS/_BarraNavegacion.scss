@@ -1,0 +1,62 @@
+//variables
+
+$color_fondo_menu:#808B9690 ;
+$color_fondo_subMenu:#CFD4D890  ;
+
+#BarraNavegacion{
+    width: 50%;
+}
+.menuPrincipal {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:$color_fondo_menu ;
+    width: 20%;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    font-weight: bold;
+    text-decoration:none ;
+    z-index: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+@for $i from 0 through 4 {
+    .p#{$i+1}{left: 20%*$i;}
+}
+
+.subMenu{
+    display: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color:$color_fondo_subMenu  ;
+    position: relative;
+    cursor:pointer;
+    padding:15px 0px;
+    font-weight: normal;
+    font-size: 13px;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    
+}
+
+.subMenu:hover{
+    font-weight: bolder;
+}
+
+
+.margen{
+    margin-top: 10px;
+    font-style: normal;
+}
+.menuPrincipal:hover .subMenu{
+    display: block;
+}
